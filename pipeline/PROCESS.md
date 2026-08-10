@@ -2,6 +2,8 @@
 
 Notes written while working on the project, tidied up.
 
+These notes cover my own Python implementation. The team submitted a teammate's R version of the cleaning and sentiment analysis — see the [README](../README.md).
+
 ```
 reviews.csv ──┐
               ├─► clean_reviews.py ──┐
