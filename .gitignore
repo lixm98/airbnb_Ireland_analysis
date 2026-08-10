@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Data — raw Airbnb extracts are hundreds of MB, get them from insideairbnb.com
+*.csv
+*.xlsx
+*.csv.gz
+!data/sample/*.csv
+
+# Model weights
+models/
+*.safetensors
+*.bin
+
+# Tableau
+*.twbx
+*.twb
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Output directory contents
+data/out/*
+!data/out/.gitkeep
