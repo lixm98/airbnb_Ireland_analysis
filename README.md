@@ -2,7 +2,7 @@
 
 MSc Business Analytics, Trinity College Dublin. Data Management and Visualisation module, October 2025.
 
-Ireland brings in a mandatory national register for short-term rentals in May 2026. We looked at the Dublin Airbnb market ahead of that change: how the market actually performs, and where the problems are.
+Ireland brings in a mandatory national register for short-term rentals in May 2026. We looked at the Irish Airbnb market ahead of that change: how the market actually performs, and where the problems are. The Overview dashboard covers the whole country, down to county-level rankings.
 
 ## My part
 
@@ -29,7 +29,7 @@ One thing to be clear about: this Python pipeline is not what the team submitted
 
 ## What the pipeline does
 
-Detail in [`pipeline/PROCESS.md`](pipeline/PROCESS.md).
+Detail in [`pipeline/PROCESS.md`](pipeline/PROCESS.md). The pipeline is scoped to Dublin. The dashboard uses the team's Ireland-wide dataset.
 
 **Reviews.** Filter by date. Drop rows with no `date` or `comments`. Deduplicate on `listing_id` + `reviewer_id` + `comments`. Remove reviews under 3 characters or over 2,000. Strip HTML tags and collapse whitespace. Read in chunks with `polars` — the file doesn't fit in memory.
 
